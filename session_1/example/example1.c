@@ -23,7 +23,7 @@ int main(void) {
     printf("\n===== Compound Boolean Operations =====\n");
     
     // Compound operations
-    printf("a && !b: %d\n", a && !b);          // true - a is true AND b is NOT true
+    printf("a && !b: %d\n", a && !b);          // true - a is true AND b is NOT false
     printf("!a || b: %d\n", !a || b);          // false - a is NOT true OR b is true
     printf("!(a && b): %d\n", !(a && b));      // true - NOT (a AND b)
     

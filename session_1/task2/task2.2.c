@@ -55,8 +55,10 @@ int main(void) {
 
 	// Complete your code here
     switch (choice) {
-        case :
+        case 1:
+            printf("The conversion of %lf from USD to EUR is %lf \n", amount, amount * USD_TO_EUR);
             break;
+        
         default:
             printf("Invalid option\n");
     }
