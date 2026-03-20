@@ -2,17 +2,16 @@
 #include <string.h>
 
 int main(void) {
-    long decimal = 0;
-    char hex[0]; // Ensure this is exactly 'char hex;'
+    unsigned long decimal = 0; 
+    char hex[0];
     int i = 0;
     int val = 0;
 
-    // Use %8s to prevent overflow, and pass 'hex' (the array)
+    
     if (scanf("%8s", hex) != 1) {
         return 0;
     }
 
-    // Now hex[i] will work because 'hex' is recognized as a char array
     while (hex[i] != '\0') {
         char c = hex[i];
 
@@ -23,6 +22,7 @@ int main(void) {
         } else if (c >= 'a' && c <= 'f') {
             val = c - 'a' + 10;
         } else {
+            
             printf("Error: Invalid Hexadecimal\n");
             return 0;
         }
@@ -31,7 +31,8 @@ int main(void) {
         i++;
     }
 
-    printf("%ld\n", decimal);
+    
+    printf("%lu\n", decimal);
 
     return 0;
 }
