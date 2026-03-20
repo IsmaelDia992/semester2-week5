@@ -3,7 +3,7 @@
 
 int main(void) {
     unsigned long decimal = 0; 
-    char hex[0];
+    char hex[9];
     int i = 0;
     int val = 0;
 
